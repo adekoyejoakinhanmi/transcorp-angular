@@ -8,21 +8,21 @@
   <nav class="app-navbar">
     <ul>
       <li>
-        <a href="#">Home</a>
+        <a [routerLink]="['/generic']">Home</a>
       </li>
       <li>
-        <a href="#">About Us</a>
+        <a [routerLink]="['/generic']">About Us</a>
       </li>
       <li>
-        <a href="#">Our Rooms</a>
+        <a [routerLink]="['/generic']">Our Rooms</a>
       </li>
       <li>
-        <a href="#" class="logo">
+        <a [routerLink]="['/generic']" class="logo">
           <img src="/assets/transcorp-1@2x.png" alt="">
         </a>
       </li>
       <li>
-        <a href="#">Reservation</a>
+        <a [routerLink]="['/generic']">Reservation</a>
       </li>
       <li>
         <a href="#">Blog</a>
@@ -34,10 +34,8 @@
   </nav>
   <nav class="mobile-navbar">
     <div class="bar">
-      <a href="#">
-        <a href="#" class="logo">
-          <img src="/assets/transcorp-1@2x.png" alt="">
-        </a>
+      <a [routerLink]="['/generic']" class="logo">
+        <img src="/assets/transcorp-1@2x.png" alt="">
       </a>
 
       <div [ngClass]="{active: active}" class="mobile-trigger" (click)="toggleActiveState()">
@@ -48,7 +46,7 @@
     </div>
     <ul *ngIf="active" class="nav-items fadeIn">
       <li>
-        <a href="#">Home</a>
+        <a [routerLink]="['/generic']">Home</a>
       </li>
       <li>
         <a href="#">About Us</a>
