@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+.nav-area {
+  .top-contact-area {
+    padding: 5px 0;
+    justify-content: space-between;
+    color: #526173;
+    border-bottom: 1px solid #e0e2e5;
+    font-family: 'Open Sans', sans-serif;
+    display: none;
+    @media screen and (min-width: 768px){
+      display: flex;
+    }
+  }
+
+  a.logo img {
+    width: 190px;
+  }
+}
+.app-navbar {
+  display: none;
+  padding: 24px 0;
+  @media screen and (min-width: 768px){
+    display: block;
+  }
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    li {
+      display: block;
+      a {
+        display: block;
+        text-decoration: none;
+        color: #526173;
+        text-transform: uppercase;
+        padding: 15px 0;
+      }
+    }
+  }
+}
+.mobile-navbar {
+  position: relative;
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  .bar {
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  ul.nav-items {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 18px;
+    li {
+      display: block;
+    }
+    li.contact {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px;
+    }
+    li a {
+      color: #526173;
+      text-transform: uppercase;
+      padding: 8px;
+      display: block;
+      text-decoration: none;
+    }
+  }
+}
+
+.mobile-trigger span{
+  background-color: #103A66;
+  display: block;
+  height: 0.133em;
+  margin-bottom: .200em;
+  position: relative;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+  width: 1.25em;
+}
+
+.mobile-trigger span:last-child {
+  margin-bottom: 0;
+}
+
+.mobile-trigger.active span:first-child {
+  transform: rotate(45deg);
+  top: 0.333em;
+}
+.mobile-trigger.active span:nth-child(2) {
+  opacity: 0;
+}
+.mobile-trigger.active span:last-child {
+  transform: rotate(-45deg);
+  top: -0.333em;
+}

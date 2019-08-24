@@ -1,0 +1,76 @@
+<div class="container nav-area">
+  <div class="top-contact-area">
+    Contact Us Directly at 01 33943 + 234 807 340 4890 (Local Time 12:00 )
+    <span>
+      EN <i class="fa fa-chevron-down"></i>
+    </span>
+  </div>
+  <nav class="app-navbar">
+    <ul>
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">About Us</a>
+      </li>
+      <li>
+        <a href="#">Our Rooms</a>
+      </li>
+      <li>
+        <a href="#" class="logo">
+          <img src="/assets/transcorp-1@2x.png" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">Reservation</a>
+      </li>
+      <li>
+        <a href="#">Blog</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <nav class="mobile-navbar">
+    <div class="bar">
+      <a href="#">
+        <a href="#" class="logo">
+          <img src="/assets/transcorp-1@2x.png" alt="">
+        </a>
+      </a>
+
+      <div [ngClass]="{active: active}" class="mobile-trigger" (click)="toggleActiveState()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <ul *ngIf="active" class="nav-items fadeIn">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">About Us</a>
+      </li>
+      <li>
+        <a href="#">Our Rooms</a>
+      </li>
+      <li>
+        <a href="#">Reservation</a>
+      </li>
+      <li>
+        <a href="#">Blog</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+      <li class=contact>
+        <span>
+          <i class="fa fa-phone"></i> 01 33943 + 234 807 340 4890
+        </span>
+        <span>EN</span>
+      </li>
+    </ul>
+  </nav>
+</div>
